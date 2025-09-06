@@ -4,13 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BotFlix - Seu assistente pessoal para encontrar o filme perfeito</title>
+  <link rel="stylesheet" href="/src/css/reset.css">
+  <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
   <main class="container">
     <div class="main-content">
       <header class="brand-header">
-
+        <div class="container-logo">
+          <img src="/src/images/avatar.png" alt="assistente robo botflix" class="robot-image">
+          <h1>BotFlix</h1>
+        </div>
       </header>
+      <section class="search-card">
+        <div class="search-container">
+          <div class="input-container">
+            <textarea row="3" id="mood-textarea" placeholder="Digite como você está se sentindo ou quer assistir..." class="mood-textarea"></textarea>
+          </div>
+            <div class="exemples">
+              <h3 class="exemple-title">Exemplos:</h3>
+              <ul class="exemples-list">
+                <li>Quero algo engraçado para relaxar depois do trabalho.</li>
+                <li>Estou procurando um thriller que me deixe na ponta na cadeira.</li>
+                <li>Algo romântico para assistir com minha namorada.</li>
+              </ul>
+            </div>
+            <button id="search-button" class="search-button">
+              <span class="play-icon">&#9654;</span>
+              Encontrar filmes perfeitos 
+            </button>
+          </div>
+        </div>
+      </section>
+      <div id="results" class="results">
+        <h2>Filmes perfeitos pra você</h2>
+        <div ></div>
+        <div>
+
+        </div>
+      </div>
     </div>
   </main>
 </body>
